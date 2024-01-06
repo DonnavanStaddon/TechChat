@@ -13,9 +13,9 @@
 ### create .gitignore to hide personal data from public view in github
 ### put env.py in gitignore
 ### Set up environment variables in env.py
-### pip instal;l gunicorn
+### pip install gunicorn
 ### Create requirements.txt file
-### Create Procile
+### Create Procfile
 ### Add this into you Procfile web: gunicorn app:app
 ### Procfile issues 
 #### It is happening due to a different encoding type in your Procfile.
