@@ -12,4 +12,4 @@
 ### create file env.py
 ### create .gitignore to hide personal data from public vue in github
 ### put env.py in gitignore
-### Set up enronment variables in env.py
+### Set up environment variables in env.py
