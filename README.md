@@ -17,6 +17,8 @@
 ### Create requirements.txt file
 ### Create Procfile
 ### Add this into you Procfile web: gunicorn app:app
+### push to git hub
+### Open Heroku connect github to heroku
 ### Procfile issues 
 #### It is happening due to a different encoding type in your Procfile.
 #### Open your Procfile in a text editor, preferably, Notepad.
