@@ -10,7 +10,7 @@
 ### In your terminal pip install Flask
 ### create file app.py
 ### create file env.py
-### create .gitignore to hide personal data from public vue in github
+### create .gitignore to hide personal data from public view in github
 ### put env.py in gitignore
 ### Set up environment variables in env.py
 ### pip instal;l gunicorn
