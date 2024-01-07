@@ -2,7 +2,7 @@
 {% block content %}
 
 <div class="chat">
-  {% for task in tasks %}
+    {% for task in tasks %}
   <i class="material-icons" style="font-size:48px;color:blue">person</i>
   <strong>{{ task.task_name }}</strong>
   <p>{{ task.due_date }}</p>
@@ -14,6 +14,8 @@
   <strong>{{ task.category_name }}</strong>
   <p>{{ task.task_description }}</p>
   <p><em>by: {{ task.created_by }}</em></p>
+  <a href="#" class="w3-btn w3-blue">Done</a>
+  <a href="#" class="w3-btn w3-green">Edit</a>
   <p class="line"></p>
 {% endfor %}
 {% endblock %}
