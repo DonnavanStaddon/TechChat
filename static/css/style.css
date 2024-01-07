@@ -131,3 +131,11 @@ body {
     text-align: center;
   }
 /* REGFORM */
+
+.flashes h4 {
+    line-height: 2;
+    background-color: lightgreen;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 150%;
+}
