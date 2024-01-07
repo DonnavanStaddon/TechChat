@@ -15,12 +15,15 @@
     <div class="topnav" id="myTopnav">
         <a href="{{ url_for('get_tasks') }}" class="logo">Tech Chat</a>
         <a href="{{ url_for('get_tasks') }}" class="active">Home</a>
-        <a href="{{ url_for('profile', username=session['user']) }}">Profile</a>
-        <a href="{{ url_for('get_tasks') }}">New Question</a>
-        <a href="{{ url_for('get_tasks') }}">Log Out</a>
-        <a href="{{ url_for('login') }}">Log In</a>
-        <a href="{{ url_for('register') }}">Register</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        {% if session.user %}
+            <a href="{{ url_for('profile', username=session['user']) }}">Profile</a>
+            <a href="{{ url_for('get_tasks') }}">New Question</a>
+            <a href="{{ url_for('logout') }}">Log Out</a>
+        {% else %}
+            <a href="{{ url_for('login') }}">Log In</a>
+            <a href="{{ url_for('register') }}">Register</a>
+        {% endif %}
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
     </div>
