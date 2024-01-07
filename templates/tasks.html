@@ -1,39 +1,20 @@
 {% extends "base.html" %}
 {% block content %}
 
+<h2>Chat Messages</h2>
 
+<div class="container">
     {% for task in tasks %}
-        {{ task.task_name }}<br>
-        {{ task.category_name }}<br>
-        {{ task.task_description }}<br>
-        {{ task.is_urgent }}<br>
-        {{ task.due_date }}<br>
-    {% endfor %}
-
-    <h2>Chat Messages</h2>
-
-<div class="container">
-  <img src="/w3images/bandmember.jpg" alt="Avatar" style="width:100%;">
-  <p>Hello. How are you today?</p>
-  <span class="time-right">11:00</span>
+    <i class="material-icons" style="font-size:48px;color:blue">person</i>
+    <strong>{{ task.task_name }}</strong>
+    <p>{{ task.due_date }}</p>
+    {% if task.is_urgent == "on" %}
+    <div class="tooltip"><i class="material-icons" style="font-size:48px;color:red">warning</i>
+        <span class="tooltiptext">Urgent</span>
+      </div>
+    {% endif %}
+  <strong>{{ task.category_name }}</strong>
+  <p>{{ task.task_description }}</p>
 </div>
-
-<div class="container darker">
-  <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="right" style="width:100%;">
-  <p>Hey! I'm fine. Thanks for asking!</p>
-  <span class="time-left">11:01</span>
-</div>
-
-<div class="container">
-  <img src="/w3images/bandmember.jpg" alt="Avatar" style="width:100%;">
-  <p>Sweet! So, what do you wanna do today?</p>
-  <span class="time-right">11:02</span>
-</div>
-
-<div class="container darker">
-  <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="right" style="width:100%;">
-  <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
-  <span class="time-left">11:05</span>
-</div>
-
+{% endfor %}
 {% endblock %}
