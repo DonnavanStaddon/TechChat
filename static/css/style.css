@@ -362,3 +362,7 @@ body {
     border-radius: 50%;
   }
 /* SWITCH */
+
+select{
+    font-size: large;
+}
