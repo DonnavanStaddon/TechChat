@@ -1,20 +1,20 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h2>Chat Messages</h2>
-
-<div class="container">
-    {% for task in tasks %}
-    <i class="material-icons" style="font-size:48px;color:blue">person</i>
-    <strong>{{ task.task_name }}</strong>
-    <p>{{ task.due_date }}</p>
-    {% if task.is_urgent == "on" %}
-    <div class="tooltip"><i class="material-icons" style="font-size:48px;color:red">warning</i>
-        <span class="tooltiptext">Urgent</span>
-      </div>
-    {% endif %}
+<div class="chat">
+  {% for task in tasks %}
+  <i class="material-icons" style="font-size:48px;color:blue">person</i>
+  <strong>{{ task.task_name }}</strong>
+  <p>{{ task.due_date }}</p>
+  {% if task.is_urgent == "on" %}
+  <div class="tooltip"><i class="material-icons" style="font-size:48px;color:red">warning</i>
+    <span class="tooltiptext">Urgent</span>
+  </div>
+  {% endif %}
   <strong>{{ task.category_name }}</strong>
   <p>{{ task.task_description }}</p>
-</div>
+  <p><em>by: {{ task.created_by }}</em></p>
+  <p class="line"></p>
 {% endfor %}
 {% endblock %}
+</div>

@@ -170,9 +170,20 @@ body {
 /* PROFILE CARD */
 
 /* CHAT MESSAGE*/
-.container {
-    border: 2px solid #dedede;
-    background-color: #e5e8f1;
+.chat {
+    border: 2px solid #6faddf;
+    background-color: #7088d1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    
+  }
+
+  .box {
+    border: 2px solid #a8c1d6;
+    background-color: #b3bcd8;
     border-radius: 5px;
     padding: 10px;
     margin: auto;
@@ -186,13 +197,13 @@ body {
     background-color: #ddd;
   }
   
-  .container::after {
+  .chat::after {
     content: "";
     clear: both;
     display: table;
   }
   
-  .container img {
+  .chat img {
     float: left;
     max-width: 60px;
     width: 100%;
@@ -200,11 +211,16 @@ body {
     border-radius: 50%;
   }
   
-  .container img.right {
+  .chat img.right {
     float: right;
     margin-left: 20px;
     margin-right:0;
   }
+  /* LINE */
+.line {
+  border: 1px solid rgb(77, 85, 77);
+  border-radius: 1px;
+}
 
 /*CHAT MESSAGE*/
 
@@ -254,7 +270,7 @@ body {
   }
   
   input[type=submit] {
-    background-color: #04AA6D;
+    background-color: #42ac7c;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -269,7 +285,7 @@ body {
   
   .ask {
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: #aaaaaa;
     padding: 20px;
   }
   
