@@ -29,3 +29,5 @@
 ### pip install flask-pymongo
 ### pip install dnspython
 ### pip freeze --local > requirements.txt
+### i use navbar w3schools to design my website
+### nav bar code https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav
