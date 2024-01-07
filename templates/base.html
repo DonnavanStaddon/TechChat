@@ -8,13 +8,14 @@
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
 
     <!--NAVBAR-->
     <div class="topnav" id="myTopnav">
         <a href="{{ url_for('get_tasks') }}" class="logo">Tech Chat</a>
         <a href="{{ url_for('get_tasks') }}" class="active">Home</a>
-        <a href="{{ url_for('get_tasks') }}">Profile</a>
+        <a href="{{ url_for('profile', username=session['user']) }}">Profile</a>
         <a href="{{ url_for('get_tasks') }}">New Question</a>
         <a href="{{ url_for('get_tasks') }}">Log Out</a>
         <a href="{{ url_for('login') }}">Log In</a>
