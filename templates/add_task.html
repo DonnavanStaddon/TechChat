@@ -3,23 +3,40 @@
 
 <h3 class="light-blue-text text-darken-4 center-align">Add Question</h3>
 
-<div>
+<div class="ask">
     <form method="post" action="">
-      <label for="fname">First Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="Your name..">
-  
-      <label for="lname">Last Name</label>
-      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-  
-      <label for="country">Country</label>
-      <select id="country" name="country">
-        <option value="australia">Australia</option>
-        <option value="canada">Canada</option>
-        <option value="usa">USA</option>
-      </select>
-    
-      <input type="submit" value="Submit">
+      <div class="row">
+        <div class="col-25">
+          <label for="task_name">Create Topic:</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="task_name" name="task_name" minlength="5" maxlength="50" placeholder="Your Topic..." required>
+        </div>
+      </div>
+        <label for="subject">Subject Description:</label>
+        </div>
+        <div class="col-100">
+          <textarea id="task_description" name="task_description" minlength="5" maxlength="200" placeholder="Describe your question.." style="height:200px" required></textarea>
+        </div>
+      </div>
+
+      <div>
+      <label for="due_date">Date:</label>
+      <input type="date" id="due_date" name="due_date" class="datepicker validate" required><br>
+      </div>
+
+      <div>
+      <label class="switch">
+        <input type="checkbox" id="is_urgent" name="is_urgent">
+        <span class="slider"></span>
+      </label>
+      <i class="material-icons" style="font-size:48px;color:red">warning</i>
+      <strong>Is Urgent</strong>
+      <div>
+
+      <div class="row">
+        <input type="submit" value="Submit">
+      </div>
     </form>
   </div>
-
 {% endblock %}
