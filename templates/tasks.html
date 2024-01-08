@@ -1,22 +1,34 @@
 {% extends "base.html" %}
 {% block content %}
 
+<!--MAIN PAGE-->
 <div class="chat">
-    {% for task in tasks %}
-  <i class="material-icons" style="font-size:48px;color:blue">person</i>
-  <strong>{{ task.task_name }}</strong>
-  <p>{{ task.due_date }}</p>
-  {% if task.is_urgent == "on" %}
-  <div class="tooltip"><i class="material-icons" style="font-size:48px;color:red">warning</i>
-    <span class="tooltiptext">Urgent</span>
+    <div class="container">
+        <h3 class="header">All Questions</h3>
+        {% for task in tasks %}
+        {% if session.user|lower == task.created_by|lower %}
+        <a href="{{ url_for('delete_task', task_id=task._id) }}" class="w3-btn w3-red">Delete</a>
+        <a href="{{ url_for('edit_task', task_id=task._id) }}" class="w3-btn w3-green">Edit</a>
+        {% endif %}
+        <P class="line"></P>
+        <p class="topic">Topic: {{ task.task_name }}</p>
+        {% if task.is_urgent == "on" %}
+    
+        <div class="tooltip">Urgent
+            <i class="material-icons" style="font-size:20px;color:red">help</i>
+            <span class="tooltiptext">Help!</span>
+        </div>
+        {% endif %}
+        <p class="category">Category: {{ task.category_name }}</p>
+        <p class="question">Question: {{ task.task_description }}</p>
+        <p class="created">Created By: {{ task.created_by }}</p>
+        <p class="date">Date: {{ task.due_date }}</p>
+        {% endfor %}
+        <P class="line"></P>
+    </div>
   </div>
-  {% endif %}
-  <strong>{{ task.category_name }}</strong>
-  <p>{{ task.task_description }}</p>
-  <p><em>by: {{ task.created_by }}</em></p>
-  <a href="" class="w3-btn w3-blue">Done</a>
-  <a href="{{ url_for('edit_task', task_id=task._id) }}" class="w3-btn w3-green">Edit</a>
-  <p class="line"></p>
-{% endfor %}
-{% endblock %}
+
+<div class="chat">
+
 </div>
+{% endblock %}

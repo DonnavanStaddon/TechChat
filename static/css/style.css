@@ -169,60 +169,30 @@ body {
   }
 /* PROFILE CARD */
 
-/* CHAT MESSAGE*/
+/* CHAT MESSAGE MAIN PAGE CALLED TASKS.HTML SHOW AS GET_TASKS*/
 .chat {
-    border: 2px solid #6faddf;
-    background-color: #7088d1;
-    border-radius: 5px;
-    padding: 10px;
-    margin: auto;
-    width: 80%;
-    padding: 10px;
-    
-  }
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  .box {
-    border: 2px solid #a8c1d6;
-    background-color: #b3bcd8;
-    border-radius: 5px;
-    padding: 10px;
-    margin: auto;
-    width: 80%;
-    padding: 10px;
-    
-  }
-  
-  .darker {
-    border-color: #ccc;
-    background-color: #ddd;
-  }
-  
-  .chat::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  .chat img {
-    float: left;
-    max-width: 60px;
-    width: 100%;
-    margin-right: 20px;
-    border-radius: 50%;
-  }
-  
-  .chat img.right {
-    float: right;
-    margin-left: 20px;
-    margin-right:0;
-  }
+.chat:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
   /* LINE */
 .line {
   border: 1px solid rgb(77, 85, 77);
   border-radius: 1px;
 }
 
-/*CHAT MESSAGE*/
+/* CHAT MESSAGE MAIN PAGE CALLED TASKS.HTML SHOW AS GET_TASKS*/
 
 /* TOOL TIP */
 .tooltip {
@@ -382,3 +352,26 @@ body {
 select{
     font-size: large;
 }
+
+/* GOOGLE FONTS*/
+.header {
+  font-family: "Audiowide", sans-serif;
+}
+.topic {
+  font-family: 'Bowlby One';font-size: 22px;
+}
+.category {
+  font-family: 'Bree Serif';font-size: 22px;
+}
+
+.question {
+  font-family: 'Carter One';font-size: 22px;
+}
+.created {
+  font-family: 'Bagel Fat One';font-size: 19px;
+}
+
+.date {
+  font-family: 'Black Ops One';font-size: 15px;
+}
+/* GOOGLE FONTS*/
