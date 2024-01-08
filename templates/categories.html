@@ -1,7 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h3 class="cath1">Manage Categories</h3>
+<div class="creanewcat">
+    <a href="{{ url_for('add_category') }}" class="w3-btn w3-blue w3-round w3-medium">Create New Category</a>
+    </a>
+</div>
 
 <div class="categories">
     <p class="catline"></p>
