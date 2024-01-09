@@ -1,16 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
 
-<div class="creanewcat">
-    <a href="{{ url_for('add_category') }}" class="w3-btn w3-blue w3-round w3-medium">Create New Category</a>
-    </a>
-</div>
-
 <div class="categories">
+    <a href="{{ url_for('add_category') }}" class="w3-btn w3-blue w3-round w3-medium">Create New Category</a>
     <p class="catline"></p>
     {% for category in categories %}
     <h2 class="cat">{{ category.category_name }}</h2>
-    <a href="" class="w3-btn w3-black w3-round w3-medium">Link Button</a>
+    <a href="{{ url_for('edit_category', category_id=category._id) }}" class="w3-btn w3-black w3-round w3-medium">Edit</a>
     <a href="" class="w3-btn w3-black w3-round w3-medium">Link Button</a>
     <p class="catline"></p>
     {% endfor %}
