@@ -3,28 +3,31 @@
 
 <!--MAIN PAGE-->
 <div class="chat">
-    <h3 class="header">All Questions</h3>
-    {% for task in tasks %}
- 
-    <P class="line"></P>
-    <p class="topic">Topic: {{ task.task_name }}</p>
-    {% if task.is_urgent == "on" %}
-    <div class="tooltip">Urgent
-        <i class="material-icons" style="font-size:20px;color:red">help</i>
-        <span class="tooltiptext">Help!</span>
-    </div>
-    {% endif %}
-    <p class="category">Category: {{ task.category_name }}</p>
-    <p class="question">Question: {{ task.task_description }}</p>
-    <p class="created">Created By: {{ task.created_by }}</p>
-    <p class="date">Date: {{ task.due_date }}</p>
-    {% if session.user|lower == task.created_by|lower %}
-    <a href="{{ url_for('delete_task', task_id=task._id) }}" class="w3-btn w3-red">Delete</a>
-    <a href="{{ url_for('edit_task', task_id=task._id) }}" class="w3-btn w3-green">Edit</a>
-    {% endif %}
-    {% endfor %}
-    <P class="line"></P>
+  <h3 class="header">All Questions</h3>
+  {% for task in tasks %}
+
+  <P class="line"></P>
+  <p class="topic">Topic: {{ task.task_name }}</p>
+  {% if task.is_urgent == "on" %}
+  <div class="tooltip">Urgent
+    <i class="material-icons" style="font-size:20px;color:red">help</i>
+    <span class="tooltiptext">Help!</span>
   </div>
+  {% endif %}
+  <p class="category">Category: {{ task.category_name }}</p>
+  <p class="question">Question: {{ task.task_description }}</p>
+  <p class="created">Created By: {{ task.created_by }}</p>
+  <p class="date">Date: {{ task.due_date }}</p>
+  {% if session.user|lower == task.created_by|lower %}
+  <a href="{{ url_for('delete_task', task_id=task._id) }}" class="w3-btn w3-red">Delete</a>
+  <a href="{{ url_for('edit_task', task_id=task._id) }}" class="w3-btn w3-green">Edit</a>
+  {% endif %}
+  {% if session.user|lower == "admin"|lower %}
+  <a href="{{ url_for('delete_task', task_id=task._id) }}" class="w3-btn w3-purple">Admin Delete</a>
+  {% endif %}
+  {% endfor %}
+  <P class="line"></P>
+</div>
 
 <div class="chat">
 
