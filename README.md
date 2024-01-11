@@ -1,4 +1,40 @@
 # Tech Chat
+## UX
+## Project Goals
+### The primary goal of thech chat is for users to ask quaestions about anything tech
+## Target
+### The target for this project is for adults and also teens if they have any questions about anything tech they submit the question and any member of the public can answer there are also Admin that can help with the answer an also remove any unwanted posts
+
+## User Exerience
+* Feel they can ask a tech question and get help soon
+* The elderly have a hard time keeping up with tech so this will be a good place for them to come
+* Large buttons also help navigation
+* Website is easy to navigate
+* Website is not so bright so eyes dont feel under strain
+
+## Developer and Bussiness Goals
+* Website is made in a way that a user can get answers quick
+* I plan to code AI to have instant answers in the future
+* This project is designed for the future in mind
+
+## Design Choice
+### I have designed this website to feel easy to use and navigate for all members of the public
+
+## Fonts
+* I used Google CSS fonts from w3schools and i found that thes fonts are very fancy and one cannot get them anywhre else
+
+## Icons
+* I used Icons from Google CSS Icons they look very professional and future proof
+
+## Colours
+* The color theme of this website was created this way so the website is not very hard on the eyes
+
+## Styling
+* I used the css code form w3schools to style this website, especially use cards and flex boxes so the website looks good on mobile too
+
+## Wireframe
+* [Layout of website](techhelp.pdf)
+
 ## A Flask Mini Project
 
 ### Create a venv
