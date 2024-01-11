@@ -5,14 +5,14 @@
 ## Target
 ### The target for this project is for adults and also teens if they have any questions about anything tech they submit the question and any member of the public can answer there are also Admin that can help with the answer an also remove any unwanted posts
 
-## User Exerience
+## User Experience
 * Feel they can ask a tech question and get help soon
 * The elderly have a hard time keeping up with tech so this will be a good place for them to come
 * Large buttons also help navigation
 * Website is easy to navigate
 * Website is not so bright so eyes dont feel under strain
 
-## Developer and Bussiness Goals
+## Developer and Business Goals
 * Website is made in a way that a user can get answers quick
 * I plan to code AI to have instant answers in the future
 * This project is designed for the future in mind
