@@ -1,7 +1,7 @@
 # Tech Chat
 ## UX
 ## Project Goals
-### The primary goal of thech chat is for users to ask quaestions about anything tech
+### The primary goal of techech chat is for users to ask questions about anything tech
 ## Target
 ### The target for this project is for adults and also teens if they have any questions about anything tech they submit the question and any member of the public can answer there are also Admin that can help with the answer an also remove any unwanted posts
 
