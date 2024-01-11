@@ -33,7 +33,7 @@
 * I used the css code form w3schools to style this website, especially use cards and flex boxes so the website looks good on mobile too
 
 ## Wireframe
-* [Layout of website](techhelp.pdf)
+* [Wireframe Layout of website](techhelp.pdf)
 
 ## A Flask Mini Project
 
